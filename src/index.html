@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+    <!-- css link -->
+     <link rel="stylesheet" href="./output.css">
+     <!-- fonts -->
+     <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- script -->
+    <script src="script.js" defer  ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+
+</head>
+<body class="font-sans m-2 sm:m-5 ">
+    <section class="w-[100%] m-auto h-full">
+        <div class=" flex gap-2 w-[100%] h-full ">
+           <div class=" sidebar w-[212px] hidden  sm:mt-1 top-20 z-10 left-5 lg:left-0  shadow-md lg:shadow-none bg-white absolute lg:relative lg:top-0 lg:block  transform ">
+                <div class="flex flex-col justify-between h-full">
+                    <div >
+                        <div class="flex mb-16 items-center gap-5  s bg-secondary p-3 rounded-lg w-[212px]  h-[60px]">
+                            <img class="w-[40px] h-[40px]" src="./assets/logotakena.png" alt="">
+                            <div class="text-sm text-primary " >
+                                <h2 class="font-semibold">Tokena</h2>
+                                <p>Finance app</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="ml-2 mb-4">Menu</h2>
+                            <div class="menu">
+                                <div id="Dashboard" class="twice flex items-center gap-1 w-[212] h-[42px] px-2 bg-primary text-white rounded-lg m-1 ">
+                                    <span class="material-symbols-outlined ">
+                                        home
+                                    </span>
+                                    <h2 class="">Dashboard</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1  ">
+                                    <span class="material-symbols-outlined">
+                                        news
+                                    </span>
+                                    <h2>News</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        equalizer
+                                    </span>
+                                    <h2>Activities</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        credit_card
+                                    </span>
+                                    <h2>Cards</h2>
+                                </div>
+                                <div class="twice flex items-center justify-between gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <div class="twice flex items-center gap-1  " >
+                                        <span class="material-symbols-outlined">
+                                            note_alt
+                                        </span>
+                                        <h2>Reports</h2>
+                                    </div>
+                                    <span class="material-symbols-outlined">
+                                    stat_minus_1
+                                    </span>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        notifications
+                                    </span>
+                                    <h2>Notifications</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        wallet
+                                    </span>
+                                    <h2>Billing</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        prescriptions
+                                    </span>
+                                    <h2>Invoices</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        headphones
+                                    </span>
+                                    <h2>Help center</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        settings
+                                    </span>
+                                    <h2>Settings</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <div class="flex flex-row items-center">
+                            <img src="./assets/john.png" alt="">
+                            <div class="truncate">
+                                <h1 class="text-sm">John Doe</h1>
+                                <span class="truncate text-sm text-gray-600">johndoe8@gmail.com</span>
+                            </div>
+                        </div>
+                        <span class="material-symbols-outlined">
+                            stat_minus_1
+                        </span>
+                    </div>
+                </div>
+           </div>
+            <div id="Dashboard" class="relative w-full ">
+                <div class=" flex border-b pb-2 mb-4 ">
+                    <button id="hamburger" class="flex items-center justify-center h-10 w-10 lg:hidden p-2 border rounded-lg">
+                        <span class="material-symbols-outlined t">
+                            menu
+                        </span>
+                    </button>
+                    <div class="navbar ml-2 flex justify-between w-full ">
+                       
+                        <div class="first flex gap-2 ">
+                            <div class=" h-[40px]  " >
+                                <h1 class="text-base lg:text-sm">Dashboard</h1>
+                                <p class="text-xs lg:text-sm">Welcom back, John Doe !</p>
+                            </div>
+                            <div >  
+                                <button class="lg:flex items-center gap-1 text-base lg:text-lg hidden  h-[42px] px-2 bg-primary text-white rounded-lg ">
+                                    <span class="material-symbols-outlined">
+                                        cast_for_education
+                                    </span>
+                                    <h2>Connect wallet</h2>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second flex gap-2 sm:gap-1 ">
+                            <button class="border flex items-center justify-center h-[42px] py-2 px-1 sm:px-4  rounded-lg">
+                                <span>USD</span>
+                                <span class="material-symbols-outlined">
+                                    unfold_more
+                                </span>
+                            </button>
+                           <button class="border h-[42px] p-2  rounded-lg">
+                            <span class="material-symbols-outlined">
+                                dark_mode
+                            </span>
+                           </button> 
+                        </div>
+                    </div>
+                </div>
+                <section class="">
+                    <div class="relative all m-3">
+                        <div class="contain grid grid-cols-1 lg:grid-cols-7 lg:gap-3  h-full mb-4 ">
+                            <div class="contain1 grid grid-cols-1 lg:col-span-2 border border-gray-200 min-h-full w-full rounded-lg p-3 ">
+                                <div class="grand text-lg  space-y-3 ">
+                                    <h2 class=" md:text-xl">Balance</h2>
+                                    <div class="son flex justify-between items-center">
+                                        <span class="price text-sm md:text-lg font-semibold">
+                                            $63,755,200
+                                        </span>
+                                        <span class="details text-xs md:text-sm ">
+                                            <span class="border p-1 bg-slate-50  rounded-3xl">
+                                                +2.3%
+                                            </span>
+                                            vs last month
+                                        </span>
+                                    </div>
+                                    <div class="bout grid grid-cols-2 text-sm gap-3 w-full">
+                                        <button class="px-5 py-2 rounded-lg flex items-center justify-center bg-secondary text-primary " >
+                                            <span class="material-symbols-outlined  text-black">
+                                                arrow_upward
+                                            </span>
+                                            Deposit
+                                        </button>
+                                        <button class="px-5  py-2 rounded-lg flex items-center justify-center bg-secondary text-primary " >
+                                            <span class="material-symbols-outlined text-black">
+                                                arrow_downward
+                                            </span>
+                                            Withdraw
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="contain2 flex flex-col col-span-5 min-h-full   w-full">
+                                <h1 class="text-lg">Trending</h1>
+                                <!-- <div class="grandcontain flex gap-2 h-full text-sm"> -->
+                                <div class="grandcontain grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4  gap-2 h-full text-sm">
+                                    <div class="elements border border-gray-200 w-full space-y-4 rounded-lg p-3">
+                                       <div class="flex flex-row  justify-between items-center ">
+                                            <div class="flex items-center justify-between">
+                                                <img src="./assets/trending-sui.png" alt="">
+                                                <span>
+                                                    Sui <br>
+                                                    sui
+                                                </span>
+                                            </div>
+                                            <span class=" space-y-2 flex items-center justify-center border p-1 bg-gray-200  rounded-3xl">
+                                                -10.5% 
+                                                <span class="material-symbols-outlined">
+                                                    trending_up
+                                                </span>
+                                            </span>
+                                       </div> 
+                                       <div class="flex flex-col text-gray-500">
+                                            <span class="font-semibold uppercase text-sm">
+                                               1.56 Sui
+                                            </span>
+                                            <span class="text-xs">
+                                               $2,455,806;673 
+                                            </span>
+
+                                       </div>
+                                    </div>
+                                    <div class="flex flex-col  border border-gray-200 space-y-4 w-full rounded-lg p-3">
+                                       <div class="flex flex-row justify-between items-center ">
+                                            <div class="flex items-center">
+                                                <img src="./assets/trending-ginnan.png" alt="">
+                                                
+                                                <span class="truncate">
+                                                    <h2 class="truncate">Ginnan</h2>
+                                                    Ginnan
+                                                </span>
+                                            </div>
+                                            <span  class="flex items-center justify-center border p-1 bg-gray-200  rounded-3xl">
+                                                +3.2%
+                                                <span class="material-symbols-outlined">
+                                                    trending_up
+                                                </span>
+                                            </span>
+                                       </div> 
+                                       <div class="flex flex-col text-gray-500">
+                                            <span class="font-semibold uppercase text-sm">
+                                                8.36 GINNAN
+                                            </span>
+                                            <span class="text-xs"> 
+                                                $34,007,492
+                                            </span>
+                                       </div>
+                                    </div>
+                                    <div class=" border border-gray-200 space-y-4 w-full rounded-lg p-3">
+                                       <div class="flex flex-row justify-between items-center ">
+                                            <div class="flex items-center">
+                                                <img src="./assets/trending-toncoin.png" alt="">
+                                                
+                                                <span class="truncate">
+                                                    <h2 class="truncate">Toncoin</h2>
+                                                    Ton
+                                                </span>
+                                            </div>
+                                            <span  class="flex items-center justify-center border p-1 bg-gray-200  rounded-3xl">
+                                                +07.5%
+                                                <span class="material-symbols-outlined">
+                                                    trending_up
+                                                </span>
+                                            </span>
+                                       </div> 
+                                       <div class="flex flex-col text-gray-500">
+                                            <span  class="font-semibold uppercase text-sm">
+                                                6.95 Ton
+                                            </span>
+                                            <span class="text-xs">
+                                                $17,524,537,268
+                                            </span>
+                                       </div>
+                                    </div>
+                                    <div class=" border border-gray-200 w-full space-y-4 rounded-lg p-3">
+                                       <div class="flex flex-row justify-between items-center ">
+                                            <div class="flex items-center">
+                                               <img src="./assets/trending-solanna.png" alt=""> 
+                                               
+                                               <span class="truncate">
+                                                <h2 class="truncate">Solanna</h2>
+                                                    Sol
+                                               </span>
+                                            </div>
+                                            <span  class="flex items-center justify-center border p-1 bg-gray-200  rounded-3xl">
+                                                -0.05%
+                                                <span class="material-symbols-outlined">
+                                                    trending_down
+                                                </span>
+                                            </span>
+                                       </div> 
+                                       <div class="flex flex-col text-gray-500">
+                                        <span  class="font-semibold uppercase text-sm">
+                                            143.76 SOL
+                                        </span>
+                                        <span class="text-xs">
+                                            $67,116,052623
+                                        </span>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containtwo grid grid-cols-1">
+                                <div class="containtwo1 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+                                    <div class="flex truncate flex-row  items-center p-4 bg-white border rounded-xl w-full sm:w-[40%]">
+                                        <img src="./assets/search.png" alt="">
+                                        <input type="search" name="" class="w-[35%] truncate" placeholder="Search cryptomonaie" id="">
+                                    </div>
+                                    <select name=""  class="w-full sm:w-[30%] p-4 bg-white border rounded-xl"  id="categorieSelect">
+                                        <option value="">Categories</option>
+                                        <option value="BTC.html">Bitcoin</option>
+                                        <option value="ETH.html">Ethereum</option>
+                                        <option value="USDT.html">Tether</option>
+                                    </select> 
+                                </div>
+                              
+                                <div class="containtwo2 mt-5 border border-b-0 rounded-lg relative w-full ">
+                                    <div class="flex flex-row items-center justify-between pt-3 px-2">
+                                        <h2 class="text-sm lg:text-lg">Market</h2>
+                                        <span class="material-symbols-outlined border rounded-lg p-2">
+                                            more_vert
+                                        </span>
+                                    </div>
+                                    <div class="element overflow-x-auto">
+                                        <table class="w-full   border-separate border-spacing-y-2 text-left text-sm">
+                                          <thead>
+                                            <tr class="border-b">
+                                              <th >.</th>
+                                              <th>#</th>
+                                              <th class="whitespace-nowrap min-w-[250px] ">Coins</th>
+                                              <th>Price</th>
+                                              <th>24h</th>
+                                              <th>24h Volume</th>
+                                              <th>Market Cap</th>
+                                              <th class="w-[10%]">Last 7 Days</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody id="crypto-table-body">
+                                           
+                                            <!-- Les données seront injectées ici -->
+                                            
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      
+                                </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+   
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.querySelector('.sidebar');
+      
+        hamburger.addEventListener('click', () => {
+          navbar.classList.toggle('hidden'); // Affiche ou cache la navbar
+        });
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+
+
+@layer base{
+    td{
+        @apply p-3 
+    }
+   th{
+        @apply bg-gray-300  p-3 
+   }
+   thead{
+        @apply min-w-full
+   }
+   
+   /* Assure un alignement uniforme des cellules */
+   td, th {
+    @apply p-5 text-left align-middle; /* Ajuste le padding pour un alignement uniforme */
+   }
+   .page-number {
+     @apply cursor-pointer text-blue-500;
+   }
+   .page-number.active {
+     @apply font-bold text-blue-700;
+   }
+}
+                

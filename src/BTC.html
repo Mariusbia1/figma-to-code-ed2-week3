@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Afficher moi</h1>
+    <div class="w-full h-[400px] flex justify-center">
+        <canvas id="priceChart"></canvas>
+    </div>
+    
+
+    <script>
+        const ctx = document.getElementById('priceChart').getContext('2d');
+const priceChart = new Chart(ctx, {
+    type: 'line', // Type de graphique
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'], // Les périodes ou mois
+        datasets: [{
+            label: 'Prix de la catégorie sélectionnée',
+            data: [ -65, -20, 0, 20, 100, 60 , 90], // Les données des prix
+            borderColor: 'green',
+            borderWidth: 2,
+            fill: false
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+    </script>
+
+</body>
+</html>
