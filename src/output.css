@@ -758,8 +758,8 @@ td, th {
   width: 100%;
 }
 
-.min-w-\[250px\] {
-  min-width: 250px;
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 
 .max-w-xl {
@@ -1179,10 +1179,6 @@ td, th {
 
   .lg\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .lg\:overflow-hidden {
-    overflow: hidden;
   }
 
   .lg\:text-lg {

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <!-- css link -->
+     <link rel="stylesheet" href="./output.css">
+     <!-- fonts -->
+     <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- script -->
+    <script src="script.js" defer  ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+
+</head>
+<body class="font-sans m-2 sm:m-5 ">
+    <section class="w-[100%] m-auto h-full">
+        <div class=" flex gap-2 w-[100%] h-full ">
+           <div class=" sidebar w-[212px] hidden  sm:mt-1 top-20 z-10 left-5 lg:left-0  shadow-md lg:shadow-none bg-white absolute lg:relative lg:top-0 lg:block  transform ">
+                <div class="flex flex-col justify-between h-full">
+                    <div >
+                        <div class="flex mb-16 items-center gap-5  s bg-secondary p-3 rounded-lg w-[212px]  h-[60px]">
+                            <img class="w-[40px] h-[40px]" src="./assets/logotakena.png" alt="">
+                            <div class="text-sm text-primary " >
+                                <h2 class="font-semibold">Tokena</h2>
+                                <p>Finance app</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="ml-2 mb-4">Menu</h2>
+                            <div class="menu">
+                                <div id="Dashboard" class="twice flex items-center gap-1 w-[212] h-[42px] px-2 bg-primary text-white rounded-lg m-1 ">
+                                    <span class="material-symbols-outlined ">
+                                        home
+                                    </span>
+                                    <h2 class="">Dashboard</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1  ">
+                                    <span class="material-symbols-outlined">
+                                        news
+                                    </span>
+                                    <h2>News</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        equalizer
+                                    </span>
+                                    <h2>Activities</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        credit_card
+                                    </span>
+                                    <h2>Cards</h2>
+                                </div>
+                                <div class="twice flex items-center justify-between gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <div class="twice flex items-center gap-1  " >
+                                        <span class="material-symbols-outlined">
+                                            note_alt
+                                        </span>
+                                        <h2>Reports</h2>
+                                    </div>
+                                    <span class="material-symbols-outlined">
+                                    stat_minus_1
+                                    </span>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        notifications
+                                    </span>
+                                    <h2>Notifications</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        wallet
+                                    </span>
+                                    <h2>Billing</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        prescriptions
+                                    </span>
+                                    <h2>Invoices</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        headphones
+                                    </span>
+                                    <h2>Help center</h2>
+                                </div>
+                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
+                                    <span class="material-symbols-outlined">
+                                        settings
+                                    </span>
+                                    <h2>Settings</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <div class="flex flex-row items-center">
+                            <img src="./assets/john.png" alt="">
+                            <div class="truncate">
+                                <h1 class="text-sm">John Doe</h1>
+                                <span class="truncate text-sm text-gray-600">johndoe8@gmail.com</span>
+                            </div>
+                        </div>
+                        <span class="material-symbols-outlined">
+                            stat_minus_1
+                        </span>
+                    </div>
+                </div>
+           </div>
+            <div id="Dashboard" class="relative w-full ">
+                <div class=" flex border-b pb-2 mb-4 ">
+                    <button id="hamburger" class="flex items-center justify-center h-10 w-10 lg:hidden p-2 border rounded-lg">
+                        <span class="material-symbols-outlined t">
+                            menu
+                        </span>
+                    </button>
+                    <div class="navbar ml-2 flex justify-between w-full ">
+                       
+                        <div class="first flex gap-2 ">
+                            <div class=" h-[40px]  " >
+                                <h1 class="text-base lg:text-sm">Dashboard</h1>
+                                <p class="text-xs lg:text-sm">Welcom back, John Doe !</p>
+                            </div>
+                            <div >  
+                                <button class="lg:flex items-center gap-1 text-base lg:text-lg hidden  h-[42px] px-2 bg-primary text-white rounded-lg ">
+                                    <span class="material-symbols-outlined">
+                                        cast_for_education
+                                    </span>
+                                    <h2>Connect wallet</h2>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second flex gap-2 sm:gap-1 ">
+                            <button class="border flex items-center justify-center h-[42px] py-2 px-1 sm:px-4  rounded-lg">
+                                <span>USD</span>
+                                <span class="material-symbols-outlined">
+                                    unfold_more
+                                </span>
+                            </button>
+                           <button class="border h-[42px] p-2  rounded-lg">
+                            <span class="material-symbols-outlined">
+                                dark_mode
+                            </span>
+                           </button> 
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.querySelector('.sidebar');
+      
+        hamburger.addEventListener('click', () => {
+          navbar.classList.toggle('hidden'); // Affiche ou cache la navbar
+        });
+    </script>
+      
+</body>
+</html>                
