@@ -3,7 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     
-
+    // screens: {
+    //   sm: '480px',
+    //   md: '768px',
+    //   lg: '976px',
+    //   xl: '1440px',
+      
+    // },
 
     extend: {
       fontFamily:{
@@ -14,11 +20,11 @@ module.exports = {
         'secondary':'rgba(0, 110, 255, 0.1)'
       },
       screens: {
-        'sm': '640px',  
-        'md': '768px', 
-        'lg': '1200px', 
-        'xl': '1300px', 
-        '2xl': '1536px',
+        sm: '480px',  
+        md: '768px', 
+        lg: '1200px', 
+        xl: '1300px', 
+       
       },
     },
   },

@@ -12,7 +12,7 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- script -->
-    <script src="script.js" defer  ></script>
+    <script src="newx.js" defer  ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
    
 
@@ -33,18 +33,18 @@
                         <div>
                             <h2 class="ml-2 mb-4">Menu</h2>
                             <div class="menu">
-                                <div id="Dashboard" class="twice flex items-center gap-1 w-[212] h-[42px] px-2 bg-primary text-white rounded-lg m-1 ">
+                                <a href="index.html" id="Dashboard" class="twice flex items-center gap-1 w-full h-[42px] px-2 bg-primary text-white rounded-lg m-1 ">
                                     <span class="material-symbols-outlined ">
                                         home
                                     </span>
                                     <h2 class="">Dashboard</h2>
-                                </div>
-                                <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1  ">
+                                </a>
+                                <a href="news.html" class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1  ">
                                     <span class="material-symbols-outlined">
                                         news
                                     </span>
                                     <h2>News</h2>
-                                </div>
+                                </a>
                                 <div class="twice flex items-center gap-1 w-full h-[42px] px-2 hover:bg-primary hover:text-white rounded-lg  m-1 ">
                                     <span class="material-symbols-outlined">
                                         equalizer
@@ -115,6 +115,7 @@
                     </div>
                 </div>
            </div>
+           <!-- Cette partie contient tous les éléments principale c'est à dire tout sauf le sidebar -->
             <div id="Dashboard" class="relative w-full ">
                 <div class=" flex border-b pb-2 mb-4 ">
                     <button id="hamburger" class="flex items-center justify-center h-10 w-10 lg:hidden p-2 border rounded-lg">
@@ -153,8 +154,424 @@
                         </div>
                     </div>
                 </div>
-
-
+                <div class="main">
+                    <div class="main-contain ">
+                        <h1>Latest crypto newsa</h1>
+                        <div id="cryptoNewsContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto w-full gap-2">
+                            <div class="border rounded-lg p-3 ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <img class="w-full"  src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3 ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full"  src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3  ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full"  src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3  ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full" src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3  ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full" src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3  ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full" src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3  ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full" src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3 ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full" src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3 ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full" src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3 ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full" src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="border rounded-lg p-3 ">
+                                <div class="flex flex-row items-center gap-1 mb-1"> 
+                                    <img src="./assets/logo_marketcap.png" id="logoCoinMarketCap" alt="logo">
+                                    <div class="flex flex-col space-y-0">
+                                        <h1 class="text-xs mb-0">CoinMarketCap</h1>
+                                        <span class="text-gray-400 text-xs">News-7hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img  class="w-full" src="./assets/Rectangle 22624.png" alt="Une image">
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <h1 class="text-black font-semibold italic">Ethereum’s Merge Coming and the Stakes Couldn’t Be Higher</h1>
+                                        <p class="text-gray-400"> The most important upgrade in blockchain history is slated for August. And the outcome of Ethe....</p>
+                                    </div>
+                                    <div class="flex items-center text-gray-900">
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-symbols-outlined">
+                                                chat
+                                            </span>
+                                            <span>
+                                                5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+        </div>
+    </section>
 
 
 
